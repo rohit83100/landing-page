@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page |Rohit Codes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="nav-bar">
+            <img id="header-img" src="https://api.freelogodesign.org/assets/thumb/logo/22080754_400.png"
+                alt="image error" width="50px" height="50px">
+
+            <a href="#contactus">Contact Us</a>
+            <a href="#video">Video</a>
+            <a href="#about">About</a>
+            <a class="nav-link" href="#home">Home</a>
+        </div>
+        <h1 id="home">Explore Your Own<br> Desiered Tech Products </h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </header>
+
+    <div id="about">
+        <h2 style="padding-top:150px ; font-size: 50px;"> <b> <u>Electronic devices</u> </b></h2> <br> <br>
+        <span style="font-size: 20px;"> Electronic devices are components for controlling the flow of electrical
+            currents for the purpose of information processing and system control. Prominent examples include
+            transistors and diodes. Electronic devices are usually small and can be grouped together into packages
+            called integrated circuits. This miniaturization is central to the modern electronics boom.
+
+        </span>
+    </div>
+
+    <div id="video-player">
+      <h2 class="h2"> Watch The Video To Get Clear Idea About The Site </h2>
+        <video  id="video" controls >
+
+        </video>
+    </div>
+
+
+
+    <div id="page">
+        <p id="contactus"> Fill In The Form More Details </p>
+
+        <form id="survey-form">
+
+
+            <div class="form-control " >
+                <label for="name" id="name-label">
+                    Name
+                </label>
+
+                <!-- Input Type Text -->
+                <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+
+                <!-- Input Type Email-->
+                <input type="email" id="email" placeholder="Enter your email" requried>
+            </div>
+
+            <div class="form-control">
+                <label for="age" id="label-age">
+                    Age
+                </label>
+
+                <!-- Input Type Text -->
+                <input type="number" id="age" placeholder="Enter your age" min="0" max="100">
+            </div>
+
+            <div class="form-control">
+                <label for="role" id="label-role">
+                    Which option best describes you?
+                </label>
+
+                <!-- Dropdown options -->
+                <select name="role" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">
+                        Professional
+                    </option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+
+
+
+            <!-- Multi-line Text Input Control -->
+            <button type="submit" value="submit">
+                Submit
+            </button>
+        </form>
+        
+    <footer><a href="#">Developed by @ Rohit.R.kamalapur.</a></a>
+    </footer>
+
+
+    </div>
+
+
+  
+
+
+
+<script>// When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("nav-bar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }</script>
+    
+</body>
+</html>
